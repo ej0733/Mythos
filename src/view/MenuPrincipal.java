@@ -25,7 +25,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
         menuDTP.add(iniciarSessao);
         iniciarSessao.setVisible(true);
         musica = new Audio();
-        musica.abrir("src\\audio\\dangerous-80s.wav");
+        musica.abrir("src\\audio\\musica2.wav");
         musica.tocar();
     }
 
@@ -40,7 +40,6 @@ public class MenuPrincipal extends javax.swing.JFrame {
 
         jMenu5 = new javax.swing.JMenu();
         menuDTP = new javax.swing.JDesktopPane();
-        jLabel1 = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenu3 = new javax.swing.JMenu();
@@ -55,23 +54,15 @@ public class MenuPrincipal extends javax.swing.JFrame {
 
         menuDTP.setBackground(new java.awt.Color(102, 102, 255));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagem/Wallpaper.jpg"))); // NOI18N
-
-        menuDTP.setLayer(jLabel1, javax.swing.JLayeredPane.DEFAULT_LAYER);
-
         javax.swing.GroupLayout menuDTPLayout = new javax.swing.GroupLayout(menuDTP);
         menuDTP.setLayout(menuDTPLayout);
         menuDTPLayout.setHorizontalGroup(
             menuDTPLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(menuDTPLayout.createSequentialGroup()
-                .addComponent(jLabel1)
-                .addGap(0, 0, Short.MAX_VALUE))
+            .addGap(0, 1080, Short.MAX_VALUE)
         );
         menuDTPLayout.setVerticalGroup(
             menuDTPLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(menuDTPLayout.createSequentialGroup()
-                .addComponent(jLabel1)
-                .addGap(0, 0, Short.MAX_VALUE))
+            .addGap(0, 780, Short.MAX_VALUE)
         );
 
         jMenuBar1.setBackground(new java.awt.Color(255, 255, 255));
@@ -153,7 +144,6 @@ public class MenuPrincipal extends javax.swing.JFrame {
     private Audio musica;
     
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;
