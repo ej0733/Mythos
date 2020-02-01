@@ -8,7 +8,6 @@ package view;
 import javax.swing.JOptionPane;
 import jogador.DAOJogador;
 import jogador.Jogador;
-import secret.Dedicatoria;
 
 /**
  *
