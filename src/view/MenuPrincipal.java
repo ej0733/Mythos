@@ -40,6 +40,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
 
         jMenu5 = new javax.swing.JMenu();
         menuDTP = new javax.swing.JDesktopPane();
+        jLabel2 = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenu3 = new javax.swing.JMenu();
@@ -51,21 +52,30 @@ public class MenuPrincipal extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Mythos");
         setPreferredSize(new java.awt.Dimension(1080, 720));
+        setResizable(false);
 
-        menuDTP.setBackground(new java.awt.Color(102, 102, 255));
+        menuDTP.setBackground(new java.awt.Color(232, 80, 65));
+        menuDTP.setPreferredSize(new java.awt.Dimension(1080, 1920));
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagem/MythosWallpaper.png"))); // NOI18N
+
+        menuDTP.setLayer(jLabel2, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         javax.swing.GroupLayout menuDTPLayout = new javax.swing.GroupLayout(menuDTP);
         menuDTP.setLayout(menuDTPLayout);
         menuDTPLayout.setHorizontalGroup(
             menuDTPLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1080, Short.MAX_VALUE)
+            .addGroup(menuDTPLayout.createSequentialGroup()
+                .addComponent(jLabel2)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         menuDTPLayout.setVerticalGroup(
             menuDTPLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 780, Short.MAX_VALUE)
+            .addComponent(jLabel2)
         );
 
         jMenuBar1.setBackground(new java.awt.Color(255, 255, 255));
+        jMenuBar1.setMinimumSize(new java.awt.Dimension(1080, 1920));
 
         jMenu1.setBackground(new java.awt.Color(255, 255, 255));
         jMenu1.setText("Arquivo");
@@ -105,11 +115,11 @@ public class MenuPrincipal extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(menuDTP)
+            .addComponent(menuDTP, javax.swing.GroupLayout.PREFERRED_SIZE, 1049, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(menuDTP)
+            .addComponent(menuDTP, javax.swing.GroupLayout.PREFERRED_SIZE, 720, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         pack();
@@ -144,12 +154,13 @@ public class MenuPrincipal extends javax.swing.JFrame {
     private Audio musica;
     
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;
     private javax.swing.JMenu jMenu4;
     private javax.swing.JMenu jMenu5;
     private javax.swing.JMenuBar jMenuBar1;
-    public javax.swing.JDesktopPane menuDTP;
+    private javax.swing.JDesktopPane menuDTP;
     // End of variables declaration//GEN-END:variables
 }
