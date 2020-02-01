@@ -186,12 +186,7 @@ public class IniciarSessao extends javax.swing.JInternalFrame {
             }
         }
         
-        if(nick.equals("easteregg".toLowerCase())){
-            secret = new Dedicatoria();
-            secret.setVisible(true);
-            secret.toFront();
-        }
-        else if(encontrado == true){
+        if(encontrado == true){
             menuJogador.apresentacaoLB.setText("Seja bem-vindo,\n"+jogador.getNickname()+"!");
             getParent().add(menuJogador);
             menuJogador.setVisible(true);
@@ -217,7 +212,6 @@ public class IniciarSessao extends javax.swing.JInternalFrame {
     private MenuJogador menuJogador;
     private CadastrarJogador cadastrar;
     private DAOJogador daoJogador;
-    private Dedicatoria secret;
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton cadastrarBT;
